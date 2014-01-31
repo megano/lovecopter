@@ -21,10 +21,12 @@ h1 {
   margin: 10px 0 12 0;
 }
 h2 {
+  font-family: helvetica, sans-serif;
   font-size: 44px;
   color: white;
 }
 h3 {
+  font-family: helvetica, sans-serif;
   text-align: center;
   color: white;
 }
@@ -32,26 +34,29 @@ p {
   font-family: helvetica, sans-serif;
   font-size: 18px;
   color: rgba(255,255,255,1);
-/*  line-height: 100px;*/
   bottom: 0;
-/*  margin: 0;*/
   height: 300px;
-  width: 45%;
+  width: 85%;
+  max-width: 600px;
+
 }
 valueprop {
   min-height: 40%;
-/*  width: 100%;*/
-  position: fixed;
-  top: 0;
-  left: 0;
+/*  position: fixed;*/
+/*  top: 0;
+  left: 0;*/
   background-size: cover;
-/*  background-repeat: no-repeat;*/
 }
+div {
+  padding: 40px;
+}
+
 .imagediv1{
   height:100%;
   width:100%;
   background-image: url("http://i.imgur.com/g2smDGY.png");
   background-repeat: no-repeat;
+    margin: 20px 40px 20px 40px;
 }
 .imagediv2{
   height:100%;
