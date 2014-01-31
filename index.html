@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <head>
-<script src="/assets/jquery.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400|Nunito' rel='stylesheet' type='text/css'>
-<link href='css/style.css' rel='stylesheet' type='text/css'>
+  <script src="/assets/jquery.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400|Nunito' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- <img class="cover" src="http://i.imgur.com/3sdpeTc.png"></img> -->
-<h1 class="page-title">lovecopter</h1>
-<h2>Cupid just got 21st century</h2>
-<div class="doforme1 doforme">
-  <p>Spontaneous<br />
-  <small>Who needs to plan ahead when you have same day delivery?</small></p>
-</div>
+  <!-- <img class="cover" src="http://i.imgur.com/3sdpeTc.png"></img> -->
+  <h1 class="page-title">lovecopter</h1>
+  <h3>Cupid just got 21st century</h3>
+  <div class="imagediv1 valueprop">
+    <article>
+      <h2>Spontaneous</h2>
+      <p>Who needs to plan ahead when you have same day delivery?</p>
+    </article>
+  </div>
 
-<div class="doforme2 doforme">
-  <p>Stand Out<br />
-  <small>Nothing says \“You\'re awesome.\” like chocolates delivered by a flying robot. Impress your crush with your thoughtfulness and precision targeting.</small></p>
-</div>
-<div class="doforme3 doforme">
-  <p>Convenient<br />
-  <small>Stuck at the office? Our drones can deliver your love anywhere in San Francisco.</small></p>
-</div>
-</div>
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
-</script>
+  <div class="imagediv2 valueprop">
+    <article>
+    <h2>Stand Out</h2>
+    <p>Nothing says \“You\'re awesome.\” like chocolates delivered by a flying robot. Impress your crush with your thoughtfulness and precision targeting.</p>
+    </article>
+  </div>
+
+  <div class="imagediv3 valueprop">
+    <article>
+      <h2>Convenient</h2>
+      <p>Stuck at the office? Our drones can deliver your love anywhere in San Francisco.</p>
+    </article>
+  </div>
+  <script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+  </script>
 
 </body>
