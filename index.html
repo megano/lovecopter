@@ -1,140 +1,191 @@
 <!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400|Nunito' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  font-family: 'Arapey', serif;
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+}
+html { 
+  background: url(http://i.imgur.com/t4zXy9M.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+}
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>lovecopter: One-tap Love Delivery in San Francisco</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        background: #333;
-      }
-
-      .bg {
-
-        background: url(LoveOnBeach.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        opacity: .5;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        position: fixed;
-        margin: 0;
-        padding: 0;
-        z-index: -1;
-      }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-        background: rgba(255,255,255,.7);
-        padding: 1em;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron input {
-        font-size: inherit;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-  </head>
-
-  <body>
-    <div class="bg">  </div>
-
-    <div class="container-narrow">
-
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#">Log in</a></li>
-        </ul>
-        <h3 class="muted">lovecopter</h3>
-      </div>
-
-      <hr>
-
-      <div class="jumbotron">
-        <h2>Flying Robots Deliver Love in San Francisco</h2>
-        <p class="lead">Cupid just got 21st century.</p>
-
-        <form class="form-inline">
-          <input type="text" class="input-small" placeholder="Email">
-          <button type="submit" class="btn">Register for a beta invite!</button>
-        </form>
-      </div>
-
-      <hr>
-
-      <div class="row-fluid marketing">
-        <div class="span6">
-
-            <img class="thumbnail" src="copter.jpg" />
-
-        </div>
-
-        <div class="span6">
-          <h4>Choose Your Love</h4>
-          <p>Love more than tacos? We deliver chocolates, love notes, roses and more!</p>
-          
-          <h4>Be Unique</h4>
-          <p>Nothing says “I love you” like chocolates delivered by a flying robot. Impress your loved one with your thoughtfulness and precision targeting.</p>
-
-          <h4>Real Time Delivery</h4>
-          <p>Have a friend that likes long walks on the beach? A friend stuck at the office? Our drones can deliver your love anywhere in San Francisco.</p>
-          
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="footer">
-        <p>© lovecopter 2013 </p>
-      </div>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
+img.cover {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
   
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-</body></html>
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 115px;
+  color: white;
+  text-shadow: 0 0 1px black;
+  margin: 10px 0 12 0;
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  text-shadow: 0 0 8px black;
+  margin: 0px 0 70px 0;
+}
+div {
+  margin: 20px 10px 20px 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p {
+  /*font-family: 'Nunito', sans-serif;*/
+  font-family: 'Londrina Shadow', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  line-height: 28px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  /*min-width: 600px;*/
+  font-size: 22px
+}
+
+.page-title {
+  padding: 18px;
+  padding-top: 0;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.3);
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.doforme {
+  padding: 40%;
+  position: relative;
+  border-radius: 12px;
+  /*margin-top: 35px;*/
+  margin: 20px 10px 20px 10px;
+}
+
+.doforme1{
+  background-image: url("http://i.imgur.com/g2smDGY.png");
+}
+.doforme2{
+  background-image: url("http://i.imgur.com/0XRtQY3.png");
+}
+.doforme3{
+  background-image: url("http://i.imgur.com/iztSqpF.png");
+}
+
+@media (max-width: 500px) {
+  body {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+}
+  h1 {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 35px;
+  }
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  div {
+    margin: 20px 10px 20px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  p {
+    font-size: 24px;
+    padding: 15px;
+    line-height: 35px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 40;
+    width: 100%;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+  }
+  small {
+    opacity: 0;
+    font-size: 14px;
+  }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+}
+
+</style>
+
+</head>
+<body>
+<!-- <img class="cover" src="http://i.imgur.com/3sdpeTc.png"></img> -->
+<h1 class="page-title">lovecopter</h1>
+<h2>Cupid just got 21st century</h2>
+<div class="doforme1 doforme">
+  <p>Spontaneous<br />
+  <small>Who needs to plan ahead when you have same day delivery?</small></p>
+</div>
+
+<div class="doforme2 doforme">
+  <p>Stand Out<br />
+  <small>Nothing says \“You\'re awesome.\” like chocolates delivered by a flying robot. Impress your crush with your thoughtfulness and precision targeting.</small></p>
+</div>
+  
+<div class="doforme3 doforme">
+  <p>Convenient<br />
+  <small>Stuck at the office? Our drones can deliver your love anywhere in San Francisco.</small></p>
+</div>
+</div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
